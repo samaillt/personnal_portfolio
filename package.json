@@ -1,0 +1,15 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "personnal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tom_samaille",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "three": "^0.112.1"
+  }
+}

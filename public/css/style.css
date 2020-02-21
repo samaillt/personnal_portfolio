@@ -1,0 +1,113 @@
+@font-face {
+font-family: 'poppins';
+src: 
+    url('../assets/font/Poppins-Regular.ttf'), /* IE9 Compat Modes */
+    url('../assets/font/Poppins-Regular.ttf') format('ttf'); /* Modern browsers */
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: 
+        url('../assets/font/Montserrat-Black.ttf'), /* IE9 Compat Modes */
+        url('../assets/font/Montserrat-Black.ttf') format('ttf'); /* Modern browsers */
+}
+
+body {
+    margin: 0;
+}
+
+canvas {
+    position: absolute;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+#content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    z-index: 1;
+}
+
+#content-container h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: montserrat, sans-serif;
+    font-style: black;
+    font-size: 4vw;
+}
+
+#content-container h2 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: montserrat, sans-serif;
+    font-style: black;
+    font-size: 1.95vw;
+}
+
+#content-container p {
+    font-family: poppins, sans-serif;
+    font-size: 1.2vw;
+    text-align: center;
+    max-width: 80vw;
+}
+
+#icons {
+    display: flex;
+    justify-content: space-between;
+    width: 15vw;
+}
+
+#icons a {
+    color: white;
+    cursor: pointer;
+    font-size: 2vw;
+}
+
+#click_info {
+    position: absolute;
+    bottom: 2vh;
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+}
+
+.disable_select {
+    cursor: default;
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -moz-user-select: none; /* Firefox */
+}
+
+@media only screen
+  and (orientation: portrait) { 
+    #content-container h1 {
+        font-size: 8vw;
+    }
+
+    #content-container h2 {
+        font-size: 3.9vw;
+    }
+
+    #content-container p {
+        font-size: 3vw;
+    }
+
+    #icons {
+        width: 50vw;
+    }
+
+    #icons a {
+        font-size: 6vw;
+    }
+
+    #click_info {
+        display: none;
+    }
+}
