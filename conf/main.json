@@ -1,0 +1,24 @@
+{
+    "fr": {
+        "lang": "fr",
+        "head_title": "Tom Samaille - Portfolio",
+        "meta_description": "Portfolio temporaire réalisé avec Three - WebGl - Node - React",
+        "meta_keywords": "webgl, three.js, lumière, vitesse, portfolio, projets, développement web, javascript",
+        "meta_author": "Tom Samaille",
+        "title": "Tom Samaille",
+        "subtitle": "Étudiant ingénieur créatif",
+        "text": "La nouvelle version arrive bientôt, cliquez sur les liens ci-dessous pour avoir des infos sur mes projets et références !",
+        "click_info": "Cliquez n'importe où pour passer en vitesse lumière"
+    },
+    "en": {
+        "lang": "en",
+        "head_title": "Tom Samaille - Portfolio",
+        "meta_description": "Temporary portfolio made with Three - WebGl - Node - React",
+        "meta_keywords": "webgl, three.js, lights, speed, portfolio, projects, web development, javascript",
+        "meta_author": "Tom Samaille",
+        "title": "Tom Samaille",
+        "subtitle": "Creative Engineer",
+        "text": "New version coming soon !",
+        "click_info": "Click anywhere for lightspeed"
+    }
+}

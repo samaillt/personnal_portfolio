@@ -2,6 +2,7 @@ class App
 {
     constructor(container, options = {})
     {
+        this.initialCameraPos = new THREE.Vector3(0, 0, 0);
         this.options = options;
         this.container = container;
 
@@ -19,9 +20,9 @@ class App
             0.1,
             10000
         );
-        this.camera.position.z = 0;
-        this.camera.position.y = 0;
-        this.camera.position.x = 0;
+        this.camera.position.x = this.initialCameraPos.x;
+        this.camera.position.y = this.initialCameraPos.y;
+        this.camera.position.z = this.initialCameraPos.z;
         this.scene = new THREE.Scene();
 
         var fog = new THREE.Fog(
@@ -53,6 +54,19 @@ class App
         this.setSize = this.setSize.bind(this);
         this.onMouseDown = this.onMouseDown.bind(this);
         this.onMouseUp = this.onMouseUp.bind(this);
+        this.onMouseOut = this.onMouseOut.bind(this);
+        this.onMouseOut = this.onMouseOut.bind(this);
+
+        this.xTargetTranslation = 0;
+        this.yTargetTranslation = 0;
+
+        this.container.addEventListener('mousemove', e => {
+            const halfContainerWidth = e.currentTarget.offsetWidth / 2;
+            const halfContainerHeight = e.currentTarget.offsetHeight / 2;
+
+            this.xTargetTranslation = (e.clientX - halfContainerWidth) * this.options.translationFactorOnMouseMove / halfContainerWidth;
+            this.yTargetTranslation = (e.clientY - halfContainerHeight) * this.options.translationFactorOnMouseMove / halfContainerHeight;
+        });
     }
     initPasses()
     {
@@ -113,7 +127,7 @@ class App
 
         this.container.addEventListener("mousedown", this.onMouseDown);
         this.container.addEventListener("mouseup", this.onMouseUp);
-        this.container.addEventListener("mouseout", this.onMouseUp);
+        this.container.addEventListener("mouseout", this.onMouseOut);
 
         this.tick();
     }
@@ -126,6 +140,23 @@ class App
     {
         this.fovTarget = this.options.fov;
         this.speedUpTarget = 0;
+    }
+    onMouseOut(ev)
+    {
+        var list = traverseChildren(ev.currentTarget);
+        var e = ev.toElement || ev.relatedTarget;
+        if (!!~list.indexOf(e))
+        {
+            return;
+        }
+        this.fovTarget = this.options.fov;
+        this.speedUpTarget = 0;
+    }
+    onClick(ev)
+    {
+        this.lightSpeed = !this.lightSpeed;
+        this.fovTarget = (this.lightSpeed) ? this.options.fov : this.options.fovSpeedUp;
+        this.speedUpTarget = (this.lightSpeed) ? 0 : this.options.speedUp;
     }
     update(delta)
     {
@@ -148,7 +179,16 @@ class App
             this.camera.fov += fovChange * delta * 6;
             updateCamera = true;
         }
-
+        if (this.xTargetTranslation != 0)
+        {
+            this.camera.position.x = lerp2(this.camera.position.x, this.initialCameraPos.x - this.xTargetTranslation, 0.5);
+            updateCamera = true;
+        }
+        if (this.yTargetTranslation != 0)
+        {
+            this.camera.position.y = lerp2(this.camera.position.y, this.initialCameraPos.y + this.yTargetTranslation, 0.5);
+            updateCamera = true;
+        }
         if (updateCamera)
         {
             this.camera.updateProjectionMatrix();
@@ -383,4 +423,28 @@ function pickRandom(arr)
 {
     if (Array.isArray(arr)) return arr[Math.floor(Math.random() * arr.length)];
     return arr;
+}
+
+function lerp2(start, end, amt) {
+    return (1-amt)*start+amt*end
+}
+
+function traverseChildren(elem){
+    var children = [];
+    var q = [];
+    q.push(elem);
+    while (q.length > 0)
+    {
+        var elem = q.pop();
+        children.push(elem);
+        pushAll(elem.children);
+    }
+    function pushAll(elemArray)
+    {
+        for(var i=0; i < elemArray.length; i++)
+        {
+        q.push(elemArray[i]);
+        }
+    }
+    return children;
 }

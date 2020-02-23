@@ -11,7 +11,8 @@ const options =
     fov: 90,
     fovSpeedUp: 150,
     colors: [0x5fdfff, 0x4ca4ea, 0xdb3ffb, 0xf95d93],
-    lightsFade: 0.5
+    lightsFade: 0.9,
+    translationFactorOnMouseMove: 3
 };
 
 const myApp = new App(container, options);
