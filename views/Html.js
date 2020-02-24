@@ -7,7 +7,11 @@ class Html extends React.Component {
     var data = this.props;
 
     // render the content as a dynamic react component
-    var contentHtml = ReactDOMServer.renderToString(<Content {...data} />);
+    var contentHtml = ReactDOMServer.renderToString(<Content {...data} />);    
+    
+    var initScript =
+    'main(' + JSON.stringify(data)+ ')';
+
 
     return (
       <html lang="fr">
@@ -22,13 +26,14 @@ class Html extends React.Component {
           <link rel="stylesheet" href="./css/style.css"/>
         </head>
         <body>
-          <div id="root" dangerouslySetInnerHTML={{__html: contentHtml}}>
-          </div>
+          <div id="root" dangerouslySetInnerHTML={{__html: contentHtml}} />
         </body>
-        <script src="/three/three.min.js"></script>
-        <script src="./js/postprocessing.min.js"></script>
-        <script src="./js/lightspeed.js"></script>
-        <script src="./js/main.js"></script>
+        <script src="./js/react.js"/>
+        <script src="/three/three.min.js"/>
+        <script src="./js/postprocessing.min.js"/>
+        <script src="./js/lightspeed.js"/>
+        <script src="./js/main.js"/>
+        <script dangerouslySetInnerHTML={{__html: initScript}}/>
       </html>
     );
   }

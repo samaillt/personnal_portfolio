@@ -1,22 +1,57 @@
 var React = require('react');
+var Title = require('./components/Title');
+var Projects = require('./components/Projects');
+var About = require('./components/About');
+var Menu = require('./components/Menu');
 
 class Content extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { page: "title" }
+    this.setTitle = this.setTitle.bind(this);
+    this.setProjects = this.setProjects.bind(this);
+    this.setAbout = this.setAbout.bind(this);
+    this.tabButton = this.tabButton.bind(this);
+  }
+
+  setTitle() {
+    console.log("title");
+    return this.setState({
+      ...this.state,
+      page: "title"
+    });
+  }
+
+  setProjects() {
+    console.log("projects");
+    return this.setState({
+      ...this.state,
+      page: "projects"
+    });
+  }
+
+  setAbout() {
+    console.log("about");
+    return this.state = {
+      ...this.state,
+      page: "about"
+    };
+  }
+
+  tabButton() {
+    console.log("tapped");
+  }
+
   render() {
     var data = this.props;
 
     return (
       <div id="content-container">
-        <h1 id="title" className="disable_select">{data.title}</h1>
-        <h2 id="subtitle" className="disable_select">{data.subtitle}</h2>
-        <p id="text" className="disable_select">{data.text}</p>
-        <div id="icons">
-          <a href="https://github.com/samaillt" target="_blank"><i className="fab fa-github"></i></a>        
-          <a href="https://www.youtube.com/channel/UCtLCj7g000uBapYeMFK7kHQ/videos" className="_blank"><i className="fab fa-youtube"></i></a>
-          <a href="https://fr.linkedin.com/in/tom-samaille/" target="_blank"><i className="fab fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/tom_samaille/" target="_blank"><i className="fab fa-instagram"></i></a>
-          <a href="https://www.behance.net/tomsamaille" target="_blank"><i className="fab fa-behance"></i></a>
-        </div>
-        <p id="click_info" className="disable_select">{data.click_info}</p>
+        {this.state.page == "title" && <Title {...data}/>}
+        {this.state.page == "projects" && <Projects {...data}/>}
+        {this.state.page == "about" && <About {...data}/>}
+        <Menu setTitle={this.setTitle} setProjects={this.setProjects} setAbout={this.setAbout}/>
+        <canvas id="mon_canvas"/>
       </div>
     );
   }

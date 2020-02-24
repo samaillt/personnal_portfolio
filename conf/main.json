@@ -8,7 +8,107 @@
         "title": "Tom Samaille",
         "subtitle": "Étudiant ingénieur créatif",
         "text": "La nouvelle version arrive bientôt, cliquez sur les liens ci-dessous pour avoir des infos sur mes projets et références !",
-        "click_info": "Cliquez n'importe où pour passer en vitesse lumière"
+        "click_info": "Cliquez n'importe où pour passer en vitesse lumière",
+        "projects": {
+            "games": {
+                "1": {
+                    "name": "Tron'ple run - Jeu 3D",
+                    "tools": "C++ - OpenGL",
+                    "desc": "Jeu inspiré du célèbre jeu Temple Run dans l'univers de Tron réalisé en C++ et OpenGL3. C'est le projet le plus intéressant en termes de quantité de travail et d'autonomie que j'ai pu réaliser.",
+                    "video": "https://www.youtube.com/watch?v=CPb91tXP71g&t",
+                    "git" : "https://github.com/samaillt/OpenGL_s3",
+                    "image" : "TODO - url"
+                },
+                "2": {
+                    "name": "Flapimac - Jeu 2D",
+                    "tools": "C - OpenGL",
+                    "desc": "Jeu codé en C réalisé avec OpenGL 2 inspiré des space shooter et du célèbre jeu flappy birds.",
+                    "video": "https://www.youtube.com/watch?v=o4CoEI3UxVM",
+                    "git" : "https://github.com/torresf/flapimac",
+                    "image" : "TODO - url"
+                },
+                "3": {
+                    "name": "TODO - Jeu de maîtrise - En cours",
+                    "tools": "C# - Unity",
+                    "desc": "Conception et programmation d’éléments de Gameplay d’un jeu vidéo en grande équipe (10 personnes) sur une durée de 2 ans",
+                    "video": "https://www.youtube.com/watch?v=RhqYrUmzur0&t=",
+                    "git" : "https://github.com/samaillt/Gameplay_experimentations",
+                    "image" : "TODO - url"
+                },
+                "4": {
+                    "name": "Tower defense - Jeu de plateau",
+                    "tools": "C",
+                    "desc": "Jeu de plateau du style Tower Defense programmé en C.",
+                    "video": "https://www.youtube.com/watch?v=H6Bl_XKkYX8",
+                    "git" : "https://github.com/samaillt/Jeu_plateau_c",
+                    "image" : "TODO - url"
+                }
+            },
+            "web" : {
+                "1": {
+                    "name": "Cognidis - Application web",
+                    "tools": "NodeJS - Express - MongoDB",
+                    "desc": "TODO - desc",
+                    "main_image": "TODO - url",
+                    "image" : "TODO - url"
+                },
+                "2": {
+                    "name": "Prescribouge - Intranet & site web",
+                    "tools": "Symfony - MySQL - API Google Maps - PHP - Javascript - WordPress",
+                    "desc": "TODO - desc",
+                    "main_image": "TODO - url",
+                    "image" : "TODO - url",
+                    "website" : "TODO - url"
+                },
+                "3": {
+                    "name": "Portsmouth University - Sites web",
+                    "tools": "PHP - WordPress - 360°",
+                    "desc": "TODO - desc",
+                    "main_image": "TODO - url",
+                    "image" : "TODO - url"
+                }
+            },
+            "software": {
+                "1": {
+                    "name": "IRC 3D - Logiciels pour l'IRCGN",
+                    "tools": "Python - OpenGL - IA - 3D",
+                    "desc": "TODO - desc",
+                    "video": "https://www.youtube.com/watch?v=cefoxSRm_To",
+                    "git" : "https://github.com/NicolasSenecal/IRC3D-head-compare/tree/dev",
+                    "image" : "TODO - url"
+                }
+            },
+            "others": {
+                "1": {
+                    "name": "Colt Seavers - Title sequence",
+                    "tools": "Modélisation / Animation / Texturing 3D - Blender",
+                    "desc": "Il s'agit de la séquence d'introduction d'un film fictionnel : Colt Seavers.",
+                    "video": "https://www.youtube.com/watch?v=j6831Hu-714",
+                    "image" : "TODO - url"
+                },
+                "2": {
+                    "name": "Domingo - Vidéo",
+                    "tools": "Effets spéciaux - Montage et étalonnage vidéo - Mixage audio",
+                    "desc": "Montage vidéo pour le streamer Français DominGo (plus de 600 000 abonnés – 200 000 vues par vidéo en moyenne).",
+                    "video": "https://www.youtube.com/watch?v=8ozHDcLnNWk",
+                    "image" : "TODO - url"
+                },
+                "3": {
+                    "name": "Monuments - 3D",
+                    "tools": "Modélisation 3D - Blender - Animation",
+                    "desc": "Projet 3D de modélisation et représentation des plus célèbres monuments au monde par époque.",
+                    "video": "https://www.youtube.com/watch?v=Lj6I958FNbw",
+                    "image" : "TODO - url"
+                },
+                "4": {
+                    "name": "Quelquechose - 3D",
+                    "tools": "Shading / Lighting / Animation 3D - Blender",
+                    "desc": "Todo - desc",
+                    "video": "https://www.youtube.com/watch?v=Zt-xm5MVHZU",
+                    "image" : "TODO - url"
+                }
+            }
+        }
     },
     "en": {
         "lang": "en",
@@ -19,6 +119,22 @@
         "title": "Tom Samaille",
         "subtitle": "Creative Engineer",
         "text": "New version coming soon !",
-        "click_info": "Click anywhere for lightspeed"
+        "click_info": "Click anywhere for lightspeed",
+        "projects": {
+            "projects": {
+                "games": {
+    
+                },
+                "web": {
+                    
+                },
+                "software": {
+                    
+                },
+                "others": {
+                    
+                }
+            }
+        }
     }
 }

@@ -1,4 +1,4 @@
-const container = document.getElementById('content-container');
+const container = document.body;
 
 const options =
 {
@@ -15,5 +15,5 @@ const options =
     translationFactorOnMouseMove: 3
 };
 
-const myApp = new App(container, options);
+const myApp = new LightSpeedApp(container, options);
 myApp.loadAssets().then(myApp.init);

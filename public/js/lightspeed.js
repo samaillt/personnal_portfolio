@@ -1,4 +1,4 @@
-class App 
+class LightSpeedApp 
 {
     constructor(container, options = {})
     {
@@ -12,6 +12,11 @@ class App
         this.renderer.setSize(container.offsetWidth, container.offsetHeight, false);
         this.renderer.setPixelRatio(window.devicePixelRatio);
         this.composer = new POSTPROCESSING.EffectComposer(this.renderer);
+        this.renderer.domElement.style.position = "absolute";
+        this.renderer.domElement.style.width = "100vw";
+        this.renderer.domElement.style.height = "100vh";
+        this.renderer.domElement.style.left = "0";
+        this.renderer.domElement.style.top = "0";
         container.append(this.renderer.domElement);
 
         this.camera = new THREE.PerspectiveCamera(
