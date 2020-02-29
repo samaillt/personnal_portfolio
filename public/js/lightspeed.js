@@ -60,17 +60,20 @@ class LightSpeedApp
         this.onMouseDown = this.onMouseDown.bind(this);
         this.onMouseUp = this.onMouseUp.bind(this);
         this.onMouseOut = this.onMouseOut.bind(this);
-        this.onMouseOut = this.onMouseOut.bind(this);
 
         this.xTargetTranslation = 0;
         this.yTargetTranslation = 0;
 
         this.container.addEventListener('mousemove', e => {
-            const halfContainerWidth = e.currentTarget.offsetWidth / 2;
-            const halfContainerHeight = e.currentTarget.offsetHeight / 2;
+            const canvas = this.renderer.domElement;
+
+            const halfContainerWidth = canvas.offsetWidth / 2;
+            const halfContainerHeight = canvas.offsetHeight / 2;
 
             this.xTargetTranslation = (e.clientX - halfContainerWidth) * this.options.translationFactorOnMouseMove / halfContainerWidth;
             this.yTargetTranslation = (e.clientY - halfContainerHeight) * this.options.translationFactorOnMouseMove / halfContainerHeight;
+
+            console.log(this.xTargetTranslation + " " + this.yTargetTranslation);
         });
     }
     initPasses()

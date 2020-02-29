@@ -25,7 +25,7 @@ canvas {
     z-index: -1;
 }
 
-#content-container {
+#title-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +36,7 @@ canvas {
     z-index: 1;
 }
 
-#content-container h1 {
+#title-container h1 {
     margin: 0;
     text-transform: uppercase;
     font-family: montserrat, sans-serif;
@@ -44,7 +44,7 @@ canvas {
     font-size: 4vw;
 }
 
-#content-container h2 {
+#title-container h2 {
     margin: 0;
     text-transform: uppercase;
     font-family: montserrat, sans-serif;
@@ -52,7 +52,7 @@ canvas {
     font-size: 1.95vw;
 }
 
-#content-container p {
+#title-container p {
     font-family: poppins, sans-serif;
     font-size: 1.2vw;
     text-align: center;
@@ -86,17 +86,88 @@ canvas {
    -moz-user-select: none; /* Firefox */
 }
 
+
+
+#menu {
+    display: flex;
+    height: 180px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 42vh;
+    right: 5vw;
+}
+
+.menu_element {
+    display: flex;
+    height: 2vh;
+    flex-direction: row;
+    justify-content: flex-end;
+    opacity: 0.5;
+    transition: all ease-in-out 0.3s;
+}
+
+.menu_element p {
+    margin: 2px;
+    cursor: default;
+    text-transform: uppercase;
+    font-family: poppins, sans-serif;
+    color: white;
+    font-size: 2vh;
+    line-height: 2vh;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+}
+
+.menu_element.selected {
+    opacity: 1;
+}
+
+.menu_element.selected p {
+    line-height: 4vh;
+    transform: translate3d(0, -1vh, 0);
+}
+
+.menu_element.selected div {
+    transform: scale(2);
+}
+
+.menu_element  p.displayed {
+    opacity: 1;
+    transform: translateX(-3vh);
+}
+
+.menu_element.selected  p.displayed {
+    opacity: 1;
+    transform: translate3d(-3vh, -1vh, 0);
+}
+
+.menu_icon {
+    width: 2vh;
+    height: 2vh;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 2vh;
+    box-sizing: content-box;
+    transition: ease-in-out 0.3s;
+}
+
+.menu_icon:hover {
+    cursor : pointer;
+    transform: scale(1.3);
+}
+
 @media only screen
   and (orientation: portrait) { 
-    #content-container h1 {
+    #title-container h1 {
         font-size: 8vw;
     }
 
-    #content-container h2 {
+    #title-container h2 {
         font-size: 3.9vw;
     }
 
-    #content-container p {
+    #title-container p {
         font-size: 3vw;
     }
 
@@ -111,36 +182,4 @@ canvas {
     #click_info {
         display: none;
     }
-}
-
-#menu {
-    display: flex;
-    height: 180px;
-    position: absolute;
-    flex-direction: column;
-    justify-content: space-between;
-    top: 42vh;
-    right: 5vw;
-}
-
-.menu_element {
-    width: 20px;
-    height: 20px;
-    background: none;
-    border: 2px solid #fff;
-    border-radius: 20px;
-    box-sizing: content-box;
-    transition: ease-in-out 0.2s;
-    opacity: 0.5;
-}
-
-.menu_element:hover {
-    cursor : pointer;
-    transform: scale(1.3);
-}
-
-.menu_element.selected {
-    cursor : default;
-    opacity: 1;
-    transform: scale(1.8);
 }

@@ -22,11 +22,11 @@ class Html extends React.Component {
           <meta name="keywords" content={data.meta_keywords}/>
           <meta name="author" content={data.meta_author}/>
           <link rel="icon" href="./assets/img/favicon.png"/>
-          <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"/>
+          {/* <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"/> */}
           <link rel="stylesheet" href="./css/style.css"/>
         </head>
         <body>
-          <div id="root" dangerouslySetInnerHTML={{__html: contentHtml}} />
+          <div id="content-container" dangerouslySetInnerHTML={{__html: contentHtml}} />
         </body>
         <script src="./js/react.js"/>
         <script src="/three/three.min.js"/>
