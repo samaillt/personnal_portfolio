@@ -1,139 +1,553 @@
 {
     "fr": {
         "lang": "fr",
-        "head_title": "Tom Samaille - Portfolio",
-        "meta_description": "Portfolio temporaire réalisé avec Three - WebGl - Node - React",
-        "meta_keywords": "webgl, three.js, lumière, vitesse, portfolio, projets, développement web, javascript",
+        "head_title": "Tom Samaille - Ingénieur créatif",
         "meta_author": "Tom Samaille",
-        "title": "Tom Samaille",
-        "subtitle": "Étudiant ingénieur créatif",
-        "text": "La nouvelle version arrive bientôt, cliquez sur les liens ci-dessous pour avoir des infos sur mes projets et références !",
-        "click_info": "Cliquez n'importe où pour passer en vitesse lumière",
-        "projects": {
-            "games": {
-                "1": {
-                    "name": "Tron'ple run - Jeu 3D",
-                    "tools": "C++ - OpenGL",
-                    "desc": "Jeu inspiré du célèbre jeu Temple Run dans l'univers de Tron réalisé en C++ et OpenGL3. C'est le projet le plus intéressant en termes de quantité de travail et d'autonomie que j'ai pu réaliser.",
-                    "video": "https://www.youtube.com/watch?v=CPb91tXP71g&t",
-                    "git" : "https://github.com/samaillt/OpenGL_s3",
-                    "image" : "TODO - url"
-                },
-                "2": {
-                    "name": "Flapimac - Jeu 2D",
-                    "tools": "C - OpenGL",
-                    "desc": "Jeu codé en C réalisé avec OpenGL 2 inspiré des space shooter et du célèbre jeu flappy birds.",
-                    "video": "https://www.youtube.com/watch?v=o4CoEI3UxVM",
-                    "git" : "https://github.com/torresf/flapimac",
-                    "image" : "TODO - url"
-                },
-                "3": {
-                    "name": "TODO - Jeu de maîtrise - En cours",
-                    "tools": "C# - Unity",
-                    "desc": "Conception et programmation d’éléments de Gameplay d’un jeu vidéo en grande équipe (10 personnes) sur une durée de 2 ans",
-                    "video": "https://www.youtube.com/watch?v=RhqYrUmzur0&t=",
-                    "git" : "https://github.com/samaillt/Gameplay_experimentations",
-                    "image" : "TODO - url"
-                },
-                "4": {
-                    "name": "Tower defense - Jeu de plateau",
-                    "tools": "C",
-                    "desc": "Jeu de plateau du style Tower Defense programmé en C.",
-                    "video": "https://www.youtube.com/watch?v=H6Bl_XKkYX8",
-                    "git" : "https://github.com/samaillt/Jeu_plateau_c",
-                    "image" : "TODO - url"
+        "pages": {
+            "home": {
+                "meta_description": "Portfolio de Tom Samaille - Vous trouverez mes réalisations et références. Réalisé avec ThreeJS - WebGl - Node - Express - React - MongoDB",
+                "meta_keywords": "portfolio, projets, développement web, javascript, lumière, vitesse, webgl, three, node, express, react, mongoDB",
+                "name": "Accueil",
+                "title": "Tom Samaille",
+                "subtitle": "Étudiant ingénieur créatif",
+                "click_info": "Cliquez n'importe où pour passer en vitesse lumière",
+                "project_button": "Mes projets"
+            },
+            "projects": {
+                "meta_description": "Portfolio de Tom Samaille - Réalisations et références.",
+                "meta_keywords": "portfolio, projets, développement web, javascript, jeu vidéo, logiciel, divers, réalisations, références",
+                "back" : "Retour",
+                "name": "Projets",
+                "page_title_outline": "Mes ",
+                "page_title_strong": "projets",
+                "categories": {
+                    "web" : {
+                        "name": "Web",
+                        "elements": {
+                            "1": {
+                                "name": "Cognidis - Application web",
+                                "tools": "NodeJS - Express - MongoDB",
+                                "desc": {
+                                    "1": "Cognidis est une start-up Française qui base son activité autour de l’analyse de données, des sciences cognitives et de l’intelligence artificielle. Elle assure la conception d’outils permettant à des grosses entreprises du secteur du tourisme et du transport de comprendre et prédire le comportement de leurs utilisateurs mais aussi d’accéder à des données pertinentes pour gagner en efficacité.",
+                                    "2": "J’ai été chargé de travailler sur l’application principale proposée par Cognidis et de réaliser différentes tâches. J’ai par exemple réalisé une refonte de la page d’accueil et optimisé la gestion de sessions et de connexions sécurisées à l’application.",
+                                    "3": "J’ai développé plusieurs outils web et réalisé diverses tâches d’optimisation, de perfectionnement, de finitions ou d’ajout de fonctionnalités sur l’ensemble de l’application.",
+                                    "4": "Enfin, la majeure partie de mon travail consistait en la création d’un simulateur permettant la modification de grilles horaires d’une ligne de transport ainsi qu’un second simulateur de modification complète d’un réseau de transport. Cela passait par la création de l’interface de simulation, la gestion des échanges serveur / client et enfin l’affichage du résultat des simulations."
+                                },
+                                "main_image": "/assets/img/cognidis_1.jpg",
+                                "images" : {
+                                    "1" : "/assets/img/cognidis_4.jpg",
+                                    "2" : "/assets/img/cognidis_3.jpg",
+                                    "3" : "/assets/img/cognidis_2.jpg"
+                                }
+                            },
+                            "2": {
+                                "name": "Intranet & Application",
+                                "tools": "Symfony - MySQL - API Google Maps - Javascript - WordPress",
+                                "desc": {
+                                    "1": "Prescri bouge est une association mettant en relation des professionnels de santé et des associations avec des personnes atteintes de différentes pathologies afin de les guider vers une pratique sportive adaptée.",
+                                    "2": "J’ai réalisé, en équipe, une application intranet à l’aide du framework Symfony qui permet à l’association de pouvoir référencer et suivre leurs bénéficiaires en interne, mais aussi les professionnels de santé et les activités qui leurs sont proposées",
+                                    "3": "J’ai aussi réalisé de mon côté une application web via l’API Google Maps qui permet aux utilisateurs du site internet de trouver toutes les activités proposées selon leur pathologie (système de tri) qui sont référencées dans la base de donnée de Prescri’Bouge. Cette carte est accessible sous l’onglet 'Annuaire des activités'."
+                                },
+                                "main_image": "/assets/img/prescribouge_1.jpg",
+                                "images" : {
+                                    "1" : "/assets/img/prescribouge_2.jpg"
+                                },
+                                "website" : "http://www.prescribouge.fr"
+                            },
+                            "3": {
+                                "name": "Portfolio personnel",
+                                "tools": "React - NodeJS - Express - MongoDB",
+                                "desc": {
+                                    "1": "Vous êtes dessus !",
+                                    "2": "Il s'agit de l'un des projets les plus instructifs et les plus 'chronophages' sur lequel j'ai pu travailler. J'ai choisi de réaliser un site à mon image en me donnant le défi de tout développer, de A à Z, entièrement par moi-même.",
+                                    "3": "J'ai utilisé les technologies React et Node pour leur utilité mais aussi pour me perfectionner. J'ai accordé un soin tout particulier à l'UI / UX via une phase de maquettage, de prototypage et de bêta test complète avant de développer l'ensemble du site."
+                                },
+                                "main_image": "/assets/img/portfolio_1.jpg",
+                                "git": "https://github.com/samaillt/personnal_portfolio",
+                                "images" : {
+                                    "1" : "/assets/img/portfolio_2.jpg",
+                                    "2" : "/assets/img/portfolio_3.jpg"
+                                }
+                            },
+                            "4": {
+                                "name": "Portsmouth University - Web apps",
+                                "tools": "SCSS - PHP - WordPress - 360°",
+                                "desc": {
+                                    "1": "Il s’agit de deux applications web que j’ai développées au cours de mon stage au sein de l'université de Portsmouth au Royaume-Uni. Cela m'a permis de développer en profondeur ma connaissance du CMS Wordpress mais aussi d’apprendre de nouvelles technologies comme SASS ou l'intégration de la 360° en web.",
+                                    "2": "J’ai designé et développé les applications et effectué la création des back-offices et la maintenance de ces dernières."
+                                },
+                                "main_image": "/assets/img/portsmouth_1.jpg",
+                                "images" : {
+                                    "1" : "/assets/img/portsmouth_2.jpg"
+                                }
+                            }
+                        }
+                    },
+                    "games": {
+                        "name": "Jeu vidéo",
+                        "elements": {
+                            "1": {
+                                "name": "Prototype de RPG open world",
+                                "tools": "C# - Unity",
+                                "desc": {
+                                    "1": "Conception et programmation d’un prototype de jeu vidéo en équipe. Il s’agit d’un projet toujours en cours de production, qui résultera au bout de deux ans de production en un jeu vidéo du type Role Play Game en Open World.",
+                                    "2": "J’ai pu participer, tout au long du projet, aux phases d’idéation, de conception et, bien évidemment, de production. J’ai notamment développé les mouvements, la gestion de la caméra, le système de combat et de nombreux éléments de Gameplay qui permettent au joueur de vivre une expérience fluide, dynamique, évolutive et unique.",
+                                    "3": "Vous pouvez télécharger l'éxécutable du prototype de jeu en cliquant sur le lien ci-dessus (windows uniquement)."
+                                },
+                                "videos": {
+                                    "1" : "https://www.youtube.com/embed/6QLEbIydIwY"
+                                },
+                                "website" : "https://drive.google.com/open?id=13OxLrKXPluHN26gr1tB_xvKJC6jDHNBC",
+                                "images" : {
+                                    "1" : "/assets/img/capture_prototype_1.jpg",
+                                    "2" : "/assets/img/proto_screen_1.jpg",
+                                    "3" : "/assets/img/proto_screen_2.jpg"
+                                }
+                            },
+                            "2": {
+                                
+                                "name": "Tron'ple run - Jeu 3D",
+                                "tools": "C++ - OpenGL",
+                                "desc": {
+                                    "1": "Jeu inspiré du célèbre jeu Temple Run dans l'univers de Tron réalisé en C++ et OpenGL3. Il a été intéressant d'appliquer les connaissances mathématiques liées à la 3D que j'ai acquises en les mettant au profit de la production de ce jeu.",
+                                    "2": "Il m'a notamment permis de me familiariser avec le développement d'un jeu vidéo sous toutes ses formes, de l'aspect graphique par la programmation 3D à l'aspect ludique par la programmation Gameplay.",
+                                    "3": "C'était un travail particulierement complet et enrichissant qui m'a notamment permis de développer de solides compétences en C++. J'ai aussi pu développer mes compétences de programmation 'engine' sous openGL, avec la rigueur et la nécessité de prendre en compte l'optimisation qu'elle suppose."
+                                },
+                                "videos": {
+                                    "1" : "https://www.youtube.com/embed/CPb91tXP71g"
+                                },
+                                "git" : "https://github.com/samaillt/OpenGL_s3",
+                                "images" : {
+                                    "1" : "/assets/img/tronplerun_1.jpg"
+                                }
+                            },
+                            "3": {
+                                
+                                "name": "Flapimac - Jeu 2D",
+                                "tools": "C - OpenGL",
+                                "desc": {
+                                    "1": "Jeu codé en C réalisé avec OpenGL 2 inspiré des space shooter et du célèbre jeu flappy birds.",
+                                    "2": "Ce projet m'a permis de développer mes compétences en programmation C, programmation Gameplay et programmation 2D."
+                                },
+                                "videos": {
+                                    "1" : "https://www.youtube.com/embed/o4CoEI3UxVM"
+                                },
+                                "git" : "https://github.com/torresf/flapimac",
+                                "images" : {
+                                    "1" : "/assets/img/flapimac_1.jpg"
+                                }
+                            },
+                            "4": {
+                                "name": "Expérimentations de Gameplay",
+                                "tools": "C# - Unity",
+                                "desc": {
+                                    "1": "Conception et programmation d’éléments de Gameplay d’un jeu vidéo. Il s'agissait de produire divertes expérimentations dans le cadre de la création d'un jeu vidéo du type Role Play Game en Open World dans lequel l'accent était mis sur le dynamisme et l'aspect rétro-actif des choix du joueur sur son environnement.",
+                                    "2": "J'ai, par exemple, développé une expérimentation dans laquelle divers éléments de l'environnement (les arbres d'une forêt) s'enflamment au contact du joueur en feu et provoquent une réaction en chaîne",
+                                    "3": "Ces diverses expérimentations étaient souvent des défis techniques. Cela m'a permis de développer mes compétences de programmation Gameplay, C# et Unity."
+                                },
+                                "videos": {
+                                    "1" : "https://www.youtube.com/embed/RhqYrUmzur0"
+                                },
+                                "git" : "https://github.com/samaillt/Gameplay_experimentations",
+                                "images" : {
+                                    "1" : "/assets/img/experimentations_1.jpg"
+                                }
+                            },
+                            "5": {
+                                "name": "Tower defense - Jeu de plateau",
+                                "tools": "C",
+                                "desc": {
+                                    "1": "Jeu de plateau du style Tower Defense.",
+                                    "2": "Ce projet m'a permis de développer drastiquement mes compétences en programmation C."
+                                },
+                                "videos": {
+                                    "1" : "https://www.youtube.com/embed/H6Bl_XKkYX8"
+                                },
+                                "git" : "https://github.com/samaillt/Jeu_plateau_c",
+                                "images" : {
+                                    "1" : "/assets/img/plateau_1.jpg"
+                                }
+                            }
+                        }
+                    },
+                    "software": {
+                        "name": "Software",
+                        "elements": {
+                            "1": {
+                                "name": "IRC 3D - Logiciels pour l'IRCGN",
+                                "tools": "Python - OpenGL - IA - 3D",
+                                "desc": {
+                                    "1": "Il s'agit d'un logiciel permettant la comparaison d'image entre une image de caméra de vidéo-surveillance et un modèle 3D. Le visage et son orientation sont détéctés automatiquement dans l'image et cette orientation est appliquée au modèle 3D pour permettre à l'expert de gendarmerie de comparer les deux.",
+                                    "2": "J'ai réalisé ce logiciel en équipe avec Nicolas Sénecal dans le cadre d'un projet de l'Institut de Recherche Criminelle de la Gendarmerie Nationale.",
+                                    "3": "Ce projet m'a permis de développer mes compétences en programmation Python, de développer une rigueur toute particulière (dans le cadre d'un projet en collaboration avec une institution militaire), mais aussi d'approfondir mes connaissances en intelligence artificielle (IA) et des outils mathématiques qui y sont liés ainsi qu'au traitement d'image."
+                                },
+                                "videos": {
+                                    "1" : "https://www.youtube.com/embed/cefoxSRm_To"
+                                },
+                                "git" : "https://github.com/NicolasSenecal/IRC3D-head-compare/tree/dev",
+                                "images" : {
+                                    "1" : "/assets/img/irc3d_1.jpg",
+                                    "2" : "/assets/img/irc3d_2.jpg"
+                                }
+                            }
+                        }
+                    },
+                    "others": {
+                        "name": "Divers",
+                        "elements": {
+                            "1": {
+                                "name": "Colt Seavers - Title sequence",
+                                "tools": "Modélisation / Animation / Texturing 3D - Blender",
+                                "desc": {
+                                    "1": "Il s'agit de la séquence d'introduction d'un film fictionnel : Colt Seavers."
+                                },
+                                "videos": {
+                                    "1" : "https://www.youtube.com/embed/j6831Hu-714"
+                                },
+                                "images" : {
+                                    "1" : "/assets/img/colt_seavers_1.jpg"
+                                }
+                            },
+                            "2": {
+                                "name": "Danse numérique - Workshop UQAT",
+                                "tools": "Unity - Motion capture - 3D - Animation",
+                                "desc": {
+                                    "1": "Il s'agit d'un projet sur deux jours réalisé lors de mon échange universitaire au Canada. L'objectif était d'allier art numérique et art vivant.",
+                                    "2": "Ce projet m'a permis de solidifier mes compétences Unity et de travailler en équipe avec des personnes d'horizons différents."
+                                },
+                                "videos": {
+                                    "1" : "https://www.youtube.com/embed/Fpaj7hoXCv0",
+                                    "2" : "https://www.youtube.com/embed/ubHXaf53sdc"
+                                },
+                                "images" : {
+                                    "1" : "/assets/img/workshop_1.jpg",
+                                    "2" : "/assets/img/workshop_2.jpg"
+                                }
+                            },
+                            "3": {
+                                "name": "Domingo - Vidéo",
+                                "tools": "Effets spéciaux - Montage et étalonnage vidéo - Mixage audio",
+                                "desc": {
+                                    "1": "Réalisation de montages vidéos pour le streamer Français DominGo (plus de 600 000 abonnés – 200 000 vues par vidéo en moyenne).",
+                                    "2": "Vous trouverez quelques exemples en suivant le lien ci-dessus."
+                                },
+                                "videos": {
+                                    "1" : "https://www.youtube.com/embed/8ozHDcLnNWk"
+                                },
+                                "website" : "https://www.youtube.com/playlist?list=PLpeXstcTpjxwujm4-xielNMh9BdhS6rr4",
+                                "images" : {
+                                    "1" : "/assets/img/domingo_1.jpg"
+                                }
+                            },
+                            "4": {
+                                "name": "Monuments - 3D",
+                                "tools": "Modélisation 3D - Blender - Animation",
+                                "desc": {
+                                    "1": "Projet 3D de modélisation, représentation et animation des plus célèbres monuments au monde par époque."
+                                },
+                                "videos": {
+                                    "1" : "https://www.youtube.com/embed/Lj6I958FNbw"
+                                },
+                                "images" : {
+                                    "1" : "/assets/img/monuments_1.jpg"
+                                }
+                            }
+                        }
+                    }
                 }
             },
-            "web" : {
-                "1": {
-                    "name": "Cognidis - Application web",
-                    "tools": "NodeJS - Express - MongoDB",
-                    "desc": "TODO - desc",
-                    "main_image": "TODO - url",
-                    "image" : "TODO - url"
+            "about": {
+                "meta_description": "Portfolio de Tom Samaille - À propos de moi, description et contacts.",
+                "meta_keywords": "portfolio, projets, développement web, jeu vidéo, gameplay, programmer, 3D, contact",
+                "name": "À propos",
+                "page_title_outline": "À ",
+                "page_title_strong": "propos",
+                "photo": "/assets/img/profil_carree.jpg",
+                "desc": {
+                    "1": "Hello ! Je suis un étudiant ingénieur créatif de 22 ans. Passionné par le développement web et le développement de jeu vidéo (Gameplay & 3D), je cherche aujourd’hui un stage de fin d’études dans l’un de ces domaines.",
+                    "2": "N’hésitez pas à me contacter pour toute information !"
                 },
-                "2": {
-                    "name": "Prescribouge - Intranet & site web",
-                    "tools": "Symfony - MySQL - API Google Maps - PHP - Javascript - WordPress",
-                    "desc": "TODO - desc",
-                    "main_image": "TODO - url",
-                    "image" : "TODO - url",
-                    "website" : "TODO - url"
-                },
-                "3": {
-                    "name": "Portsmouth University - Sites web",
-                    "tools": "PHP - WordPress - 360°",
-                    "desc": "TODO - desc",
-                    "main_image": "TODO - url",
-                    "image" : "TODO - url"
-                }
-            },
-            "software": {
-                "1": {
-                    "name": "IRC 3D - Logiciels pour l'IRCGN",
-                    "tools": "Python - OpenGL - IA - 3D",
-                    "desc": "TODO - desc",
-                    "video": "https://www.youtube.com/watch?v=cefoxSRm_To",
-                    "git" : "https://github.com/NicolasSenecal/IRC3D-head-compare/tree/dev",
-                    "image" : "TODO - url"
-                }
-            },
-            "others": {
-                "1": {
-                    "name": "Colt Seavers - Title sequence",
-                    "tools": "Modélisation / Animation / Texturing 3D - Blender",
-                    "desc": "Il s'agit de la séquence d'introduction d'un film fictionnel : Colt Seavers.",
-                    "video": "https://www.youtube.com/watch?v=j6831Hu-714",
-                    "image" : "TODO - url"
-                },
-                "2": {
-                    "name": "Domingo - Vidéo",
-                    "tools": "Effets spéciaux - Montage et étalonnage vidéo - Mixage audio",
-                    "desc": "Montage vidéo pour le streamer Français DominGo (plus de 600 000 abonnés – 200 000 vues par vidéo en moyenne).",
-                    "video": "https://www.youtube.com/watch?v=8ozHDcLnNWk",
-                    "image" : "TODO - url"
-                },
-                "3": {
-                    "name": "Monuments - 3D",
-                    "tools": "Modélisation 3D - Blender - Animation",
-                    "desc": "Projet 3D de modélisation et représentation des plus célèbres monuments au monde par époque.",
-                    "video": "https://www.youtube.com/watch?v=Lj6I958FNbw",
-                    "image" : "TODO - url"
-                },
-                "4": {
-                    "name": "Quelquechose - 3D",
-                    "tools": "Shading / Lighting / Animation 3D - Blender",
-                    "desc": "Todo - desc",
-                    "video": "https://www.youtube.com/watch?v=Zt-xm5MVHZU",
-                    "image" : "TODO - url"
-                }
+                "address": "3 Rue Benoit Bernard, 69008 Lyon",
+                "phone": "+33 6 95 48 43 60",
+                "mail": "tomsamaille@gmail.com",
+                "copyright": "Copyright 2020 - Tom Samaille - All rights reserved"
             }
         }
     },
     "en": {
         "lang": "en",
-        "head_title": "Tom Samaille - Portfolio",
+        "head_title": "Tom Samaille - Creative engineer",
         "meta_description": "Temporary portfolio made with Three - WebGl - Node - React",
         "meta_keywords": "webgl, three.js, lights, speed, portfolio, projects, web development, javascript",
         "meta_author": "Tom Samaille",
-        "title": "Tom Samaille",
-        "subtitle": "Creative Engineer",
-        "text": "New version coming soon !",
-        "click_info": "Click anywhere for lightspeed",
-        "projects": {
+        "copyright": "Copyright 2020 - Tom Samaille - All rights reserved",
+        "pages": {
+            "home": {
+                "meta_description": "Tom Samaille's website - You will find some of my projects & references. Made with ThreeJS - WebGl - Node - Express - React - MongoDB",
+                "meta_keywords": "portfolio, projects, web development, javascript, light, speed, lightspeed, webgl, three, node, express, react, mongoDB",
+                "name": "Home",
+                "title": "Tom Samaille",
+                "subtitle": "Creative Engineer",
+                "click_info": "Click anywhere for lightspeed",
+                "project_button": "My projects"
+            },
             "projects": {
-                "games": {
-    
-                },
-                "web": {
-                    
-                },
-                "software": {
-                    
-                },
-                "others": {
-                    
+                "meta_description": "Tom Samaille's website - Projects and references.",
+                "meta_keywords": "portfolio, projects, web development, javascript, game, software, references, 3d",
+                "back" : "Back",
+                "name": "Projects",
+                "page_title_outline": "My ",
+                "page_title_strong": "projects",
+                "categories": {
+                    "web" : {
+                        "name": "Web",
+                        "elements": {
+                            "1": {
+                                "name": "Cognidis - Web application",
+                                "tools": "NodeJS - Express - MongoDB",
+                                "desc": {
+                                    "1": "Cognidis is a French start-up which bases its activity around data analysis, cognitive sciences and artificial intelligence. It designs tools that allow large companies of tourism and transport branch to understand and predict the behavior of their users, but also to access relevant data to improve their efficiency.",
+                                    "2": "I worked on the main application offered by Cognidis. I redesigned the landing page and optimized the management of user sessions and implemented secured connections to the application. I also developed several web tools, performed various optimization tasks and added new features across the entire app.",
+                                    "3": "But the most important part of my work was the creation of a simulator allowing the modification of timetables of a public transportation line, but also the cration of a second simulator allowing every possible modification on an entire transport network. This involved the creation of the simulation interface, the management of server / client exchanges and finally the display of simulation results."
+                                },
+                                "main_image": "/assets/img/cognidis_1.jpg",
+                                "images" : {
+                                    "1" : "/assets/img/cognidis_4.jpg",
+                                    "2" : "/assets/img/cognidis_3.jpg",
+                                    "3" : "/assets/img/cognidis_2.jpg"
+                                }
+                            },
+                            "2": {
+                                "name": "Intranet & Application",
+                                "tools": "Symfony - MySQL - Google Maps API - Javascript - WordPress",
+                                "desc": {
+                                    "1": "'Prescri'bouge' is an association linking health professionals with people suffering from different pathologies in order to guide them towards an adapted sports practice.",
+                                    "2": "I developed with my team an intranet application using Symfony framework which allows Prescri'bouge association to reference and follow their beneficiaries internally, but also the activities offered to them and health professionals.",
+                                    "3": "I also developed a web application with Google Maps API which allows website users to find every single activity offered according to their pathology (sorting system) which are referenced in the Prescri'Bouge associations database. Find this map under 'Annuaire des activités' tab."
+                                },
+                                "main_image": "/assets/img/prescribouge_1.jpg",
+                                "images" : {
+                                    "1" : "/assets/img/prescribouge_2.jpg"
+                                },
+                                "website" : "http://www.prescribouge.fr"
+                            },
+                            "3": {
+                                "name": "Personnal portfolio",
+                                "tools": "React - NodeJS - Express - MongoDB",
+                                "desc": {
+                                    "1": "You're watching it!",
+                                    "2": "it's one of the most instructive and time consuming projects I have ever worked on. I gave myself the challenge of developing every single feature from scratch entirely by myself.",
+                                    "3": "I used React and Node for their usefulness but also to improve myself whith these technologies. I paid a special attention to UI / UX as I prototyped and tested everything before developing the whole website."
+                                },
+                                "main_image": "/assets/img/portfolio_1.jpg",
+                                "git": "https://github.com/samaillt/personnal_portfolio",
+                                "images" : {
+                                    "1" : "/assets/img/portfolio_2.jpg",
+                                    "2" : "/assets/img/portfolio_3.jpg"
+                                }
+                            },
+                            "4": {
+                                "name": "Portsmouth University - Web apps",
+                                "tools": "SCSS - PHP - WordPress - 360°",
+                                "desc": {
+                                    "1": "I developed these two web applications during my internship in Portsmouth University in the United Kingdom. This allowed me to deeply developped my knowledge of Wordpress CMS but also to learn new technologies such as SASS or 360° integration on a website.",
+                                    "2": "I designed and developed both applications and created back-offices as well as I handled their maintenance."
+                                },
+                                "main_image": "/assets/img/portsmouth_1.jpg",
+                                "images" : {
+                                    "1" : "/assets/img/portsmouth_2.jpg"
+                                }
+                            }
+                        }
+                    },
+                    "games": {
+                        "name": "Video game",
+                        "elements": {
+                            "1": {
+                                "name": "RPG open world prototype",
+                                "tools": "C# - Unity",
+                                "desc": {
+                                    "1": "Design and programming of a video game. This project still in its production phase and will result after a two years into a Role Play Game Open World video game.",
+                                    "2": "Throughout the whole project, I participate in the ideation, design and, of course, production phases. I developed for example mouvements and camera management, combat system many Gameplay features that allow the player to experiment a fluid, dynamic and unique experience.",
+                                    "3": "You can download the game prototype by clicking on the link above (windows only)."
+                                },
+                                "videos": {
+                                    "1" : "https://www.youtube.com/embed/6QLEbIydIwY"
+                                },
+                                "website" : "https://drive.google.com/open?id=13OxLrKXPluHN26gr1tB_xvKJC6jDHNBC",
+                                "images" : {
+                                    "1" : "/assets/img/capture_prototype_1.jpg",
+                                    "2" : "/assets/img/proto_screen_1.jpg",
+                                    "3" : "/assets/img/proto_screen_2.jpg"
+                                }
+                            },
+                            "2": {
+                                
+                                "name": "Tron'ple run - 3d Game",
+                                "tools": "C++ - OpenGL",
+                                "desc": {
+                                    "1": "It's inspired by the famous game Temple Run as well as the Tron universe and developed with C++ and Opengl3. It was interesting to use the mathematical knowledge related to 3D that I acquired during my trainings allowing the production of this game.",
+                                    "2": "It helped me understand the whole development of a video game, from the graphical part with 3D programming to the user experience with Gameplay programming.",
+                                    "3": "It was a particularly complete and interesting project that allowed me to develop strong C++ skills. I also developed my 'engine' programming skills under openGL, with the rigour and the need of optimization that it implies."
+                                },
+                                "videos": {
+                                    "1" : "https://www.youtube.com/embed/CPb91tXP71g"
+                                },
+                                "git" : "https://github.com/samaillt/OpenGL_s3",
+                                "images" : {
+                                    "1" : "/assets/img/tronplerun_1.jpg"
+                                }
+                            },
+                            "3": {
+                                
+                                "name": "Flapimac - 2D Game",
+                                "tools": "C - OpenGL",
+                                "desc": {
+                                    "1": "It's a video game developed with C and OpenGL inspired by space shooters and the famous game 'flappy birds'.",
+                                    "2": "This project allowed me to develop my C programming, Gameplay programming and 2D programming skills."
+                                },
+                                "videos": {
+                                    "1" : "https://www.youtube.com/embed/o4CoEI3UxVM"
+                                },
+                                "git" : "https://github.com/torresf/flapimac",
+                                "images" : {
+                                    "1" : "/assets/img/flapimac_1.jpg"
+                                }
+                            },
+                            "4": {
+                                "name": "Gameplay experimentations",
+                                "tools": "C# - Unity",
+                                "desc": {
+                                    "1": "Design and programming of Gameplay features of a video game. We wanted to develop several experiments during the creation of a Role Play Game in Open World in which the dynamism and retro-active aspect of the players choices on his environment were the most important aspects.",
+                                    "2": "For example, I developed an experiment in which several elements of the environment (the trees of a forest) ignites in contact with the player (on fire) and provoke a chain reaction",
+                                    "3": "These experiments were often technical challenges. This allowed me to develop my Gameplay programming, C# and Unity skills."
+                                },
+                                "videos": {
+                                    "1" : "https://www.youtube.com/embed/RhqYrUmzur0"
+                                },
+                                "git" : "https://github.com/samaillt/Gameplay_experimentations",
+                                "images" : {
+                                    "1" : "/assets/img/experimentations_1.jpg"
+                                }
+                            },
+                            "5": {
+                                "name": "Tower defense - Board game",
+                                "tools": "C",
+                                "desc": {
+                                    "1": "It's a board 'tower defense' like game.",
+                                    "2": "This project allowed me to deeply develop my Gameplay programming and c skills."
+                                },
+                                "videos": {
+                                    "1" : "https://www.youtube.com/embed/H6Bl_XKkYX8"
+                                },
+                                "git" : "https://github.com/samaillt/Jeu_plateau_c",
+                                "images" : {
+                                    "1" : "/assets/img/plateau_1.jpg"
+                                }
+                            }
+                        }
+                    },
+                    "software": {
+                        "name": "Software",
+                        "elements": {
+                            "1": {
+                                "name": "IRC 3D - IRCGN software",
+                                "tools": "Python - OpenGL - IA - 3D",
+                                "desc": {
+                                    "1": "It is a software that allows image comparison between a video-surveillance camera image and a 3D model. The face and its orientation are automatically detected in the image and this same orientation is applied to the 3D model to allow the expert to compare both of them.",
+                                    "2": "I developed this software with Nicolas Sénecal as part of a project with the Institute of Criminal Research of the Nationale Gendarmerie (IRCGN).",
+                                    "3": "This project allowed me to develop my Python programming skills, to develop a particular rigour (as part of a project in collaboration with a military institution), but also to improve my knowledge in artificial intelligence (AI) and related mathematical tools as well as image processing."
+                                },
+                                "videos": {
+                                    "1" : "https://www.youtube.com/embed/cefoxSRm_To"
+                                },
+                                "git" : "https://github.com/NicolasSenecal/IRC3D-head-compare/tree/dev",
+                                "images" : {
+                                    "1" : "/assets/img/irc3d_1.jpg",
+                                    "2" : "/assets/img/irc3d_2.jpg"
+                                }
+                            }
+                        }
+                    },
+                    "others": {
+                        "name": "Others",
+                        "elements": {
+                            "1": {
+                                "name": "Colt Seavers - Title sequence",
+                                "tools": "3D Modeling / Animation / Texturing - Blender",
+                                "desc": {
+                                    "1": "It's a 3D home-made title sequence of a fictionnal movie : Colt Seavers."
+                                },
+                                "videos": {
+                                    "1" : "https://www.youtube.com/embed/j6831Hu-714"
+                                },
+                                "images" : {
+                                    "1" : "/assets/img/colt_seavers_1.jpg"
+                                }
+                            },
+                            "2": {
+                                "name": "Digital danse - UQAT Workshop",
+                                "tools": "Unity - Motion capture - 3D - Animation",
+                                "desc": {
+                                    "1": "This is a two-day project that was made during my university exchange in Canada. The goal was to combine digital art and living art.",
+                                    "2": "This project allowed me to improve my Unity skills and work as a team with people from different backgrounds."
+                                },
+                                "videos": {
+                                    "1" : "https://www.youtube.com/embed/Fpaj7hoXCv0",
+                                    "2" : "https://www.youtube.com/embed/ubHXaf53sdc"
+                                },
+                                "images" : {
+                                    "1" : "/assets/img/workshop_1.jpg",
+                                    "2" : "/assets/img/workshop_2.jpg"
+                                }
+                            },
+                            "3": {
+                                "name": "Domingo - Video",
+                                "tools": "VFX - Video editing - Audio editing",
+                                "desc": {
+                                    "1": "Video editing for the french streamer and youtuber DominGo (more than 600 000 subscribers – 200 000 average views on each video).",
+                                    "2": "You will find some examples by clicking on the link above."
+                                },
+                                "videos": {
+                                    "1" : "https://www.youtube.com/embed/8ozHDcLnNWk"
+                                },
+                                "website" : "https://www.youtube.com/playlist?list=PLpeXstcTpjxwujm4-xielNMh9BdhS6rr4",
+                                "images" : {
+                                    "1" : "/assets/img/domingo_1.jpg"
+                                }
+                            },
+                            "4": {
+                                "name": "Monuments - 3D",
+                                "tools": "3D - Blender - Animation",
+                                "desc": {
+                                    "1": "3D modeling and animation project about the most famous monuments around the world."
+                                },
+                                "videos": {
+                                    "1" : "https://www.youtube.com/embed/Lj6I958FNbw"
+                                },
+                                "images" : {
+                                    "1" : "/assets/img/monuments_1.jpg"
+                                }
+                            }
+                        }
+                    }
                 }
+            },
+            "about": {
+                "meta_description": "Tom Samaille's website - About me, description and contact informations.",
+                "meta_keywords": "portfolio, projects, web development, game, gameplay, programmer, 3D, contact, informations",
+                "name": "About",
+                "page_title_outline": "About ",
+                "page_title_strong": "me",
+                "photo": "/assets/img/profil_carree.jpg",
+                "desc": {
+                    "1": "Hi ! I'm a French 22 years old creative engineer. I'm a video game programmer (3D engine & Gameplay) and also a web developper and I'm looking forward to work as an intern in one of these branches.",
+                    "2": "Let's get in touch !"
+                },
+                "address": "3 Rue Benoit Bernard, 69008 Lyon, France",
+                "phone": "+33 6 95 48 43 60",
+                "mail": "tomsamaille@gmail.com",
+                "copyright": "Copyright 2020 - Tom Samaille - All rights reserved"
             }
         }
     }

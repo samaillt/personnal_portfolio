@@ -29,6 +29,7 @@ class LightSpeedApp
         this.camera.position.y = this.initialCameraPos.y;
         this.camera.position.z = this.initialCameraPos.z;
         this.scene = new THREE.Scene();
+        this.scene.background = new THREE.Color(0x000000);
 
         var fog = new THREE.Fog(
             options.colors.background,
@@ -73,7 +74,7 @@ class LightSpeedApp
             this.xTargetTranslation = (e.clientX - halfContainerWidth) * this.options.translationFactorOnMouseMove / halfContainerWidth;
             this.yTargetTranslation = (e.clientY - halfContainerHeight) * this.options.translationFactorOnMouseMove / halfContainerHeight;
 
-            console.log(this.xTargetTranslation + " " + this.yTargetTranslation);
+            // console.log(this.xTargetTranslation + " " + this.yTargetTranslation);
         });
     }
     initPasses()
@@ -141,8 +142,10 @@ class LightSpeedApp
     }
     onMouseDown(ev)
     {
-        this.fovTarget = this.options.fovSpeedUp;
-        this.speedUpTarget = this.options.speedUp;
+        if (!ev.target.classList.contains("disable_lightspeed")) {
+            this.fovTarget = this.options.fovSpeedUp;
+            this.speedUpTarget = this.options.speedUp;
+        }
     }
     onMouseUp(ev)
     {

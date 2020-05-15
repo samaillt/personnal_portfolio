@@ -5,20 +5,21 @@
   "main": "index.js",
   "scripts": {
     "start": "browserify -t babelify views/main.js --standalone main -o public/js/react.js && node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build_linux": "NODE_ENV=production browserify -t babelify views/main.js --standalone main -o public/js/react.js"
   },
   "author": "tom_samaille",
   "license": "MIT",
   "dependencies": {
-    "@babel/preset-env": "^7.0.0",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "babel-preset-react": "^6.24.1",
     "babelify": "^10.0.0",
-    "browserify": "^16.5.0",
+    "browserify": "^16.5.1",
     "express": "^4.17.1",
     "express-react-views": "^0.11.0",
     "fs": "0.0.1-security",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "three": "^0.112.1"
   }
 }

@@ -16,16 +16,42 @@ app.engine('js', reactViews.createEngine());
 app.use('/three', express.static(__dirname + '/node_modules/three/build'))
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/public/assets'));
+app.use(express.static(__dirname + '/public/assets/font'));
+app.use(express.static(__dirname + '/public/assets/img'));
 app.use(express.static(__dirname + '/public/conf'));
 app.use(express.static(__dirname + '/public/css'));
 app.use(express.static(__dirname + '/public/js'));
 
 app.get('/', (req, res) => {
-  res.render('html', main_conf.fr);
+  res.redirect('/home');
 });
 
 app.get('/en', (req, res) => {
-  res.render('html', main_conf.en);
+  res.redirect('/en/home');
+});
+
+app.get('/home', (req, res) => {
+  res.render('Html', {...main_conf.fr, page: "home"});
+});
+
+app.get('/en/home', (req, res) => {
+  res.render('Html', {...main_conf.en, page: "home"});
+});
+
+app.get('/projects', (req, res) => {
+  res.render('Html', {...main_conf.fr, page: "projects"});
+});
+
+app.get('/en/projects', (req, res) => {
+  res.render('Html', {...main_conf.en, page: "projects"});
+});
+
+app.get('/about', (req, res) => {
+  res.render('Html', {...main_conf.fr, page: "about"});
+});
+
+app.get('/en/about', (req, res) => {
+  res.render('Html', {...main_conf.en, page: "about"});
 });
 
 app.listen(port, ip, () => {
