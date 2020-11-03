@@ -54,6 +54,13 @@ app.get('/en/about', (req, res) => {
   res.render('Html', {...main_conf.en, page: "about"});
 });
 
+/* Local deployment */
 app.listen(port, ip, () => {
   console.log('App listening on port ' + port)
 });
+
+/* Always data deployment
+app.listen(process.env.PORT, process.env.IP, () => {
+  console.log('App listening on port ' + process.env.PORT)
+});
+*/

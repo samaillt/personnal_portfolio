@@ -21,68 +21,6 @@
                 "page_title_outline": "Mes ",
                 "page_title_strong": "projets",
                 "categories": {
-                    "web" : {
-                        "name": "Web",
-                        "elements": {
-                            "1": {
-                                "name": "Cognidis - Application web",
-                                "tools": "NodeJS - Express - MongoDB",
-                                "desc": {
-                                    "1": "Cognidis est une start-up Française qui base son activité autour de l’analyse de données, des sciences cognitives et de l’intelligence artificielle. Elle assure la conception d’outils permettant à des grosses entreprises du secteur du tourisme et du transport de comprendre et prédire le comportement de leurs utilisateurs mais aussi d’accéder à des données pertinentes pour gagner en efficacité.",
-                                    "2": "J’ai été chargé de travailler sur l’application principale proposée par Cognidis et de réaliser différentes tâches. J’ai par exemple réalisé une refonte de la page d’accueil et optimisé la gestion de sessions et de connexions sécurisées à l’application.",
-                                    "3": "J’ai développé plusieurs outils web et réalisé diverses tâches d’optimisation, de perfectionnement, de finitions ou d’ajout de fonctionnalités sur l’ensemble de l’application.",
-                                    "4": "Enfin, la majeure partie de mon travail consistait en la création d’un simulateur permettant la modification de grilles horaires d’une ligne de transport ainsi qu’un second simulateur de modification complète d’un réseau de transport. Cela passait par la création de l’interface de simulation, la gestion des échanges serveur / client et enfin l’affichage du résultat des simulations."
-                                },
-                                "main_image": "/assets/img/cognidis_1.jpg",
-                                "images" : {
-                                    "1" : "/assets/img/cognidis_4.jpg",
-                                    "2" : "/assets/img/cognidis_3.jpg",
-                                    "3" : "/assets/img/cognidis_2.jpg"
-                                }
-                            },
-                            "2": {
-                                "name": "Intranet & Application",
-                                "tools": "Symfony - MySQL - API Google Maps - Javascript - WordPress",
-                                "desc": {
-                                    "1": "Prescri bouge est une association mettant en relation des professionnels de santé et des associations avec des personnes atteintes de différentes pathologies afin de les guider vers une pratique sportive adaptée.",
-                                    "2": "J’ai réalisé, en équipe, une application intranet à l’aide du framework Symfony qui permet à l’association de pouvoir référencer et suivre leurs bénéficiaires en interne, mais aussi les professionnels de santé et les activités qui leurs sont proposées",
-                                    "3": "J’ai aussi réalisé de mon côté une application web via l’API Google Maps qui permet aux utilisateurs du site internet de trouver toutes les activités proposées selon leur pathologie (système de tri) qui sont référencées dans la base de donnée de Prescri’Bouge. Cette carte est accessible sous l’onglet 'Annuaire des activités'."
-                                },
-                                "main_image": "/assets/img/prescribouge_1.jpg",
-                                "images" : {
-                                    "1" : "/assets/img/prescribouge_2.jpg"
-                                },
-                                "website" : "http://www.prescribouge.fr"
-                            },
-                            "3": {
-                                "name": "Portfolio personnel",
-                                "tools": "React - NodeJS - Express - MongoDB",
-                                "desc": {
-                                    "1": "Vous êtes dessus !",
-                                    "2": "Il s'agit de l'un des projets les plus instructifs et les plus 'chronophages' sur lequel j'ai pu travailler. J'ai choisi de réaliser un site à mon image en me donnant le défi de tout développer, de A à Z, entièrement par moi-même.",
-                                    "3": "J'ai utilisé les technologies React et Node pour leur utilité mais aussi pour me perfectionner. J'ai accordé un soin tout particulier à l'UI / UX via une phase de maquettage, de prototypage et de bêta test complète avant de développer l'ensemble du site."
-                                },
-                                "main_image": "/assets/img/portfolio_1.jpg",
-                                "git": "https://github.com/samaillt/personnal_portfolio",
-                                "images" : {
-                                    "1" : "/assets/img/portfolio_2.jpg",
-                                    "2" : "/assets/img/portfolio_3.jpg"
-                                }
-                            },
-                            "4": {
-                                "name": "Portsmouth University - Web apps",
-                                "tools": "SCSS - PHP - WordPress - 360°",
-                                "desc": {
-                                    "1": "Il s’agit de deux applications web que j’ai développées au cours de mon stage au sein de l'université de Portsmouth au Royaume-Uni. Cela m'a permis de développer en profondeur ma connaissance du CMS Wordpress mais aussi d’apprendre de nouvelles technologies comme SASS ou l'intégration de la 360° en web.",
-                                    "2": "J’ai designé et développé les applications et effectué la création des back-offices et la maintenance de ces dernières."
-                                },
-                                "main_image": "/assets/img/portsmouth_1.jpg",
-                                "images" : {
-                                    "1" : "/assets/img/portsmouth_2.jpg"
-                                }
-                            }
-                        }
-                    },
                     "games": {
                         "name": "Jeu vidéo",
                         "elements": {
@@ -192,6 +130,68 @@
                             }
                         }
                     },
+                    "web" : {
+                        "name": "Web",
+                        "elements": {
+                            "1": {
+                                "name": "Cognidis - Application web",
+                                "tools": "NodeJS - Express - MongoDB",
+                                "desc": {
+                                    "1": "Cognidis est une start-up Française qui base son activité autour de l’analyse de données, des sciences cognitives et de l’intelligence artificielle. Elle assure la conception d’outils permettant à des grosses entreprises du secteur du tourisme et du transport de comprendre et prédire le comportement de leurs utilisateurs mais aussi d’accéder à des données pertinentes pour gagner en efficacité.",
+                                    "2": "J’ai été chargé de travailler sur l’application principale proposée par Cognidis et de réaliser différentes tâches. J’ai par exemple réalisé une refonte de la page d’accueil et optimisé la gestion de sessions et de connexions sécurisées à l’application.",
+                                    "3": "J’ai développé plusieurs outils web et réalisé diverses tâches d’optimisation, de perfectionnement, de finitions ou d’ajout de fonctionnalités sur l’ensemble de l’application.",
+                                    "4": "Enfin, la majeure partie de mon travail consistait en la création d’un simulateur permettant la modification de grilles horaires d’une ligne de transport ainsi qu’un second simulateur de modification complète d’un réseau de transport. Cela passait par la création de l’interface de simulation, la gestion des échanges serveur / client et enfin l’affichage du résultat des simulations."
+                                },
+                                "main_image": "/assets/img/cognidis_1.jpg",
+                                "images" : {
+                                    "1" : "/assets/img/cognidis_4.jpg",
+                                    "2" : "/assets/img/cognidis_3.jpg",
+                                    "3" : "/assets/img/cognidis_2.jpg"
+                                }
+                            },
+                            "2": {
+                                "name": "Intranet & Application",
+                                "tools": "Symfony - MySQL - API Google Maps - Javascript - WordPress",
+                                "desc": {
+                                    "1": "Prescri bouge est une association mettant en relation des professionnels de santé et des associations avec des personnes atteintes de différentes pathologies afin de les guider vers une pratique sportive adaptée.",
+                                    "2": "J’ai réalisé, en équipe, une application intranet à l’aide du framework Symfony qui permet à l’association de pouvoir référencer et suivre leurs bénéficiaires en interne, mais aussi les professionnels de santé et les activités qui leurs sont proposées",
+                                    "3": "J’ai aussi réalisé de mon côté une application web via l’API Google Maps qui permet aux utilisateurs du site internet de trouver toutes les activités proposées selon leur pathologie (système de tri) qui sont référencées dans la base de donnée de Prescri’Bouge. Cette carte est accessible sous l’onglet 'Annuaire des activités'."
+                                },
+                                "main_image": "/assets/img/prescribouge_1.jpg",
+                                "images" : {
+                                    "1" : "/assets/img/prescribouge_2.jpg"
+                                },
+                                "website" : "http://www.prescribouge.fr"
+                            },
+                            "3": {
+                                "name": "Portfolio personnel",
+                                "tools": "React - NodeJS - Express - MongoDB",
+                                "desc": {
+                                    "1": "Vous êtes dessus !",
+                                    "2": "Il s'agit de l'un des projets les plus instructifs et les plus 'chronophages' sur lequel j'ai pu travailler. J'ai choisi de réaliser un site à mon image en me donnant le défi de tout développer, de A à Z, entièrement par moi-même.",
+                                    "3": "J'ai utilisé les technologies React et Node pour leur utilité mais aussi pour me perfectionner. J'ai accordé un soin tout particulier à l'UI / UX via une phase de maquettage, de prototypage et de bêta test complète avant de développer l'ensemble du site."
+                                },
+                                "main_image": "/assets/img/portfolio_1.jpg",
+                                "git": "https://github.com/samaillt/personnal_portfolio",
+                                "images" : {
+                                    "1" : "/assets/img/portfolio_2.jpg",
+                                    "2" : "/assets/img/portfolio_3.jpg"
+                                }
+                            },
+                            "4": {
+                                "name": "Portsmouth University - Web apps",
+                                "tools": "SCSS - PHP - WordPress - 360°",
+                                "desc": {
+                                    "1": "Il s’agit de deux applications web que j’ai développées au cours de mon stage au sein de l'université de Portsmouth au Royaume-Uni. Cela m'a permis de développer en profondeur ma connaissance du CMS Wordpress mais aussi d’apprendre de nouvelles technologies comme SASS ou l'intégration de la 360° en web.",
+                                    "2": "J’ai designé et développé les applications et effectué la création des back-offices et la maintenance de ces dernières."
+                                },
+                                "main_image": "/assets/img/portsmouth_1.jpg",
+                                "images" : {
+                                    "1" : "/assets/img/portsmouth_2.jpg"
+                                }
+                            }
+                        }
+                    },
                     "others": {
                         "name": "Divers",
                         "elements": {
@@ -264,7 +264,7 @@
                 "page_title_strong": "propos",
                 "photo": "/assets/img/profil_carree.jpg",
                 "desc": {
-                    "1": "Hello ! Je suis un étudiant ingénieur créatif de 22 ans. Passionné par le développement web et le développement de jeu vidéo (Gameplay & 3D), je cherche aujourd’hui un stage de fin d’études dans l’un de ces domaines.",
+                    "1": "Hello ! Je suis un étudiant ingénieur créatif de 22 ans. Passionné par le développement logiciel (IA / Traitement d'image), web et jeu vidéo (Gameplay & 3D), je cherche aujourd’hui un stage de fin d’études dans l’un de ces domaines.",
                     "2": "N’hésitez pas à me contacter pour toute information !"
                 },
                 "address": "3 Rue Benoit Bernard, 69008 Lyon",
@@ -299,67 +299,6 @@
                 "page_title_outline": "My ",
                 "page_title_strong": "projects",
                 "categories": {
-                    "web" : {
-                        "name": "Web",
-                        "elements": {
-                            "1": {
-                                "name": "Cognidis - Web application",
-                                "tools": "NodeJS - Express - MongoDB",
-                                "desc": {
-                                    "1": "Cognidis is a French start-up which bases its activity around data analysis, cognitive sciences and artificial intelligence. It designs tools that allow large companies of tourism and transport branch to understand and predict the behavior of their users, but also to access relevant data to improve their efficiency.",
-                                    "2": "I worked on the main application offered by Cognidis. I redesigned the landing page and optimized the management of user sessions and implemented secured connections to the application. I also developed several web tools, performed various optimization tasks and added new features across the entire app.",
-                                    "3": "But the most important part of my work was the creation of a simulator allowing the modification of timetables of a public transportation line, but also the cration of a second simulator allowing every possible modification on an entire transport network. This involved the creation of the simulation interface, the management of server / client exchanges and finally the display of simulation results."
-                                },
-                                "main_image": "/assets/img/cognidis_1.jpg",
-                                "images" : {
-                                    "1" : "/assets/img/cognidis_4.jpg",
-                                    "2" : "/assets/img/cognidis_3.jpg",
-                                    "3" : "/assets/img/cognidis_2.jpg"
-                                }
-                            },
-                            "2": {
-                                "name": "Intranet & Application",
-                                "tools": "Symfony - MySQL - Google Maps API - Javascript - WordPress",
-                                "desc": {
-                                    "1": "'Prescri'bouge' is an association linking health professionals with people suffering from different pathologies in order to guide them towards an adapted sports practice.",
-                                    "2": "I developed with my team an intranet application using Symfony framework which allows Prescri'bouge association to reference and follow their beneficiaries internally, but also the activities offered to them and health professionals.",
-                                    "3": "I also developed a web application with Google Maps API which allows website users to find every single activity offered according to their pathology (sorting system) which are referenced in the Prescri'Bouge associations database. Find this map under 'Annuaire des activités' tab."
-                                },
-                                "main_image": "/assets/img/prescribouge_1.jpg",
-                                "images" : {
-                                    "1" : "/assets/img/prescribouge_2.jpg"
-                                },
-                                "website" : "http://www.prescribouge.fr"
-                            },
-                            "3": {
-                                "name": "Personnal portfolio",
-                                "tools": "React - NodeJS - Express - MongoDB",
-                                "desc": {
-                                    "1": "You're watching it!",
-                                    "2": "it's one of the most instructive and time consuming projects I have ever worked on. I gave myself the challenge of developing every single feature from scratch entirely by myself.",
-                                    "3": "I used React and Node for their usefulness but also to improve myself whith these technologies. I paid a special attention to UI / UX as I prototyped and tested everything before developing the whole website."
-                                },
-                                "main_image": "/assets/img/portfolio_1.jpg",
-                                "git": "https://github.com/samaillt/personnal_portfolio",
-                                "images" : {
-                                    "1" : "/assets/img/portfolio_2.jpg",
-                                    "2" : "/assets/img/portfolio_3.jpg"
-                                }
-                            },
-                            "4": {
-                                "name": "Portsmouth University - Web apps",
-                                "tools": "SCSS - PHP - WordPress - 360°",
-                                "desc": {
-                                    "1": "I developed these two web applications during my internship in Portsmouth University in the United Kingdom. This allowed me to deeply developped my knowledge of Wordpress CMS but also to learn new technologies such as SASS or 360° integration on a website.",
-                                    "2": "I designed and developed both applications and created back-offices as well as I handled their maintenance."
-                                },
-                                "main_image": "/assets/img/portsmouth_1.jpg",
-                                "images" : {
-                                    "1" : "/assets/img/portsmouth_2.jpg"
-                                }
-                            }
-                        }
-                    },
                     "games": {
                         "name": "Video game",
                         "elements": {
@@ -469,6 +408,67 @@
                             }
                         }
                     },
+                    "web" : {
+                        "name": "Web",
+                        "elements": {
+                            "1": {
+                                "name": "Cognidis - Web application",
+                                "tools": "NodeJS - Express - MongoDB",
+                                "desc": {
+                                    "1": "Cognidis is a French start-up which bases its activity around data analysis, cognitive sciences and artificial intelligence. It designs tools that allow large companies of tourism and transport branch to understand and predict the behavior of their users, but also to access relevant data to improve their efficiency.",
+                                    "2": "I worked on the main application offered by Cognidis. I redesigned the landing page and optimized the management of user sessions and implemented secured connections to the application. I also developed several web tools, performed various optimization tasks and added new features across the entire app.",
+                                    "3": "But the most important part of my work was the creation of a simulator allowing the modification of timetables of a public transportation line, but also the cration of a second simulator allowing every possible modification on an entire transport network. This involved the creation of the simulation interface, the management of server / client exchanges and finally the display of simulation results."
+                                },
+                                "main_image": "/assets/img/cognidis_1.jpg",
+                                "images" : {
+                                    "1" : "/assets/img/cognidis_4.jpg",
+                                    "2" : "/assets/img/cognidis_3.jpg",
+                                    "3" : "/assets/img/cognidis_2.jpg"
+                                }
+                            },
+                            "2": {
+                                "name": "Intranet & Application",
+                                "tools": "Symfony - MySQL - Google Maps API - Javascript - WordPress",
+                                "desc": {
+                                    "1": "'Prescri'bouge' is an association linking health professionals with people suffering from different pathologies in order to guide them towards an adapted sports practice.",
+                                    "2": "I developed with my team an intranet application using Symfony framework which allows Prescri'bouge association to reference and follow their beneficiaries internally, but also the activities offered to them and health professionals.",
+                                    "3": "I also developed a web application with Google Maps API which allows website users to find every single activity offered according to their pathology (sorting system) which are referenced in the Prescri'Bouge associations database. Find this map under 'Annuaire des activités' tab."
+                                },
+                                "main_image": "/assets/img/prescribouge_1.jpg",
+                                "images" : {
+                                    "1" : "/assets/img/prescribouge_2.jpg"
+                                },
+                                "website" : "http://www.prescribouge.fr"
+                            },
+                            "3": {
+                                "name": "Personnal portfolio",
+                                "tools": "React - NodeJS - Express - MongoDB",
+                                "desc": {
+                                    "1": "You're watching it!",
+                                    "2": "it's one of the most instructive and time consuming projects I have ever worked on. I gave myself the challenge of developing every single feature from scratch entirely by myself.",
+                                    "3": "I used React and Node for their usefulness but also to improve myself whith these technologies. I paid a special attention to UI / UX as I prototyped and tested everything before developing the whole website."
+                                },
+                                "main_image": "/assets/img/portfolio_1.jpg",
+                                "git": "https://github.com/samaillt/personnal_portfolio",
+                                "images" : {
+                                    "1" : "/assets/img/portfolio_2.jpg",
+                                    "2" : "/assets/img/portfolio_3.jpg"
+                                }
+                            },
+                            "4": {
+                                "name": "Portsmouth University - Web apps",
+                                "tools": "SCSS - PHP - WordPress - 360°",
+                                "desc": {
+                                    "1": "I developed these two web applications during my internship in Portsmouth University in the United Kingdom. This allowed me to deeply developped my knowledge of Wordpress CMS but also to learn new technologies such as SASS or 360° integration on a website.",
+                                    "2": "I designed and developed both applications and created back-offices as well as I handled their maintenance."
+                                },
+                                "main_image": "/assets/img/portsmouth_1.jpg",
+                                "images" : {
+                                    "1" : "/assets/img/portsmouth_2.jpg"
+                                }
+                            }
+                        }
+                    },
                     "others": {
                         "name": "Others",
                         "elements": {
@@ -541,7 +541,7 @@
                 "page_title_strong": "me",
                 "photo": "/assets/img/profil_carree.jpg",
                 "desc": {
-                    "1": "Hi ! I'm a French 22 years old creative engineer. I'm a video game programmer (3D engine & Gameplay) and also a web developper and I'm looking forward to work as an intern in one of these branches.",
+                    "1": "Hi ! I'm a French 22 years old creative engineer. I'm a video game programmer (3D engine & Gameplay) and also a software & web developper and I'm looking forward to work as an intern in one of these branches.",
                     "2": "Let's get in touch !"
                 },
                 "address": "3 Rue Benoit Bernard, 69008 Lyon, France",
